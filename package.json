@@ -1,5 +1,5 @@
 {
-  "name": "currency-converter",
+  "name": "devops68-currency-converter",
   "version": "1.0.0",
   "description": "API to convert between currencies",
   "main": "index.js",
