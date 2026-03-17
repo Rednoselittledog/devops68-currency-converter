@@ -18,12 +18,12 @@ output "ssh_command" {
   description = "คำสั่ง SSH เข้าเครื่อง"
 }
 
-output "check user-data" {
+output "check_user-data" {
   value       = "รัน ssh แล้ว cat /var/log/user-data.log"
   description = "ดู error ต่าง ๆ"
 }
 
-output "check app-data" {
+output "check_app-data" {
   value       = "รัน ssh แล้ว cat /devops68-currency-converter/app.log"
   description = "ดู log ของแอป"
 }
