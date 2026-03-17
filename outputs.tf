@@ -1,5 +1,5 @@
 output "api_url" {
-  value       = "http://${aws_instance.currency_converter.public_ip}:3009"
+  value       = "http://${aws_instance.currency_converter.public_ip}:3009/convert"
   description = "URL ของ Currency Converter API"
 }
 
