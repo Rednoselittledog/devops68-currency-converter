@@ -271,31 +271,12 @@ ps aux | grep node
 
 ### 7.5 ตรวจสอบว่า API ทำงานหรือไม่
 ```bash
-curl localhost:3009/convert?amount=100&from=USD&to=EUR
+curl "localhost:3009/convert?amount=100&from=USD&to=EUR"
 ```
 
 ---
 
-## 8. การทำงานในเครื่อง (Local Development)
-
-### ติดตั้ง Dependencies
-```bash
-npm install
-```
-
-### รันแอปพลิเคชัน
-```bash
-npm start
-```
-
-### ทดสอบ
-```bash
-curl "http://localhost:3009/convert?amount=100&from=USD&to=EUR"
-```
-
----
-
-## 9. การลบ Infrastructure
+## 8. การลบ Infrastructure
 
 เมื่อต้องการลบ resources ทั้งหมดที่สร้างไว้:
 
