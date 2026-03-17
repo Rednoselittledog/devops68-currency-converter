@@ -17,3 +17,13 @@ output "ssh_command" {
   value       = "ssh -i ${var.key_name}.pem ubuntu@${aws_instance.currency_converter.public_ip}"
   description = "คำสั่ง SSH เข้าเครื่อง"
 }
+
+output "check user-data" {
+  value       = "รัน ssh แล้ว cat /var/log/user-data.log"
+  description = "ดู error ต่าง ๆ"
+}
+
+output "check app-data" {
+  value       = "รัน ssh แล้ว cat /devops68-currency-converter/app.log"
+  description = "ดู log ของแอป"
+}
