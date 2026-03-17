@@ -155,10 +155,10 @@ terraform apply
 ### 5.4 ดู Output
 หลังจาก apply สำเร็จ จะเห็น output ดังนี้:
 ```
-api_url = "http://13.XXX.XXX.XXX:3009/convert"
-example_usage = "http://13.XXX.XXX.XXX:3009/convert?amount=100&from=USD&to=THB"
-public_ip = "13.XXX.XXX.XXX"
-ssh_command = "ssh -i DevOpsQuiz-2.pem ubuntu@13.XXX.XXX.XXX"
+api_url = "http://[PUBLIC_IP]:3009/convert"
+example_usage = "http://[PUBLIC_IP]:3009/convert?amount=100&from=USD&to=THB"
+public_ip = "[PUBLIC_IP]"
+ssh_command = "ssh -i DevOpsQuiz-2.pem ubuntu@[PUBLIC_IP]"
 ```
 
 ---
